@@ -20,8 +20,8 @@ export const Route = createFileRoute("/")({
         content:
           "Trusted customs clearing, freight forwarding & logistics in Kampala, Uganda. Air, sea & land freight, warehousing and supply chain solutions.",
       },
-      { property: "og:title", content: "Crestway Clearing & Logistics (U) Ltd" },
-      { property: "og:description", content: "Reliable customs clearing and logistics solutions in Uganda." },
+      { property: "og:title", content: "Crestway Clearing & Logistics | Customs & Freight Uganda" },
+      { property: "og:description", content: "Trusted customs clearing, freight forwarding & logistics in Kampala, Uganda. Air, sea & land freight, warehousing and supply chain solutions." },
       { property: "og:type", content: "website" },
     ],
     links: [
