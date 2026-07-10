@@ -19,17 +19,13 @@ export function Hero() {
         className="absolute inset-0 overflow-hidden"
         style={{ transform: `translate3d(0, ${scrollY * 0.3}px, 0)` }}
       >
-        <video
-          ref={videoRef}
-          src={heroVideo.url}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="metadata"
+        <img
+          src={heroImage}
+          alt="Modern container terminal at night with stacked shipping containers and reach stackers"
           width={1920}
           height={1080}
-          aria-hidden="true"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover will-change-transform animate-hero-zoom"
         />
         <div className="absolute inset-0 bg-navy-deep/40" />
