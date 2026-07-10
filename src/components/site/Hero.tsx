@@ -1,11 +1,10 @@
-import heroVideo from "@/assets/hero-port.mp4.asset.json";
+import heroImage from "@/assets/hero-terminal.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Truck } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 
 export function Hero() {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
