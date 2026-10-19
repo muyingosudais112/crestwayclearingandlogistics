@@ -12,12 +12,17 @@ export const Route = createFileRoute("/why-us")({
   component: WhyUsPage,
   head: () => ({
     meta: [
-      { title: "Why Choose Us | Crestway Clearing & Logistics" },
-      { name: "description", content: "Why importers and exporters trust Crestway — fast customs clearance, full compliance, experienced agents and reliable delivery across Uganda." },
-      { property: "og:title", content: "Why Choose Crestway" },
-      { property: "og:description", content: "Built for businesses that move the world." },
+      { name: "twitter:title", content: "Why Choose Us | Crestline Customs Agency" },
+      { name: "twitter:description", content: "Why importers and exporters trust Crestline Customs Agency — fast customs clearance, full compliance, experienced agents and reliable delivery across Uganda." },
+      { property: "og:url", content: "https://crestwayclearingandlogistics.lovable.app/why-us" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
+      { title: "Why Choose Us | Crestline Customs Agency" },
+      { name: "description", content: "Why importers and exporters trust Crestline Customs Agency — fast customs clearance, full compliance, experienced agents and reliable delivery across Uganda." },
+      { property: "og:title", content: "Why Choose Crestline Customs Agency" },
+      { property: "og:description", content: "Why importers and exporters trust Crestline Customs Agency — fast customs clearance, full compliance, experienced agents and reliable delivery across Uganda." },
     ],
-    links: [{ rel: "canonical", href: "/why-us" }],
+    links: [{ rel: "canonical", href: "https://crestwayclearingandlogistics.lovable.app/why-us" }],
   }),
 });
 
@@ -36,7 +41,7 @@ function WhyUsPage() {
       <Navbar />
       <main>
         <PageHeader
-          eyebrow="Why Choose Crestway"
+          eyebrow="Why Choose Crestline Customs Agency"
           title="Built for businesses that move the world."
           description="A premium logistics partner combining deep local expertise with international freight reach."
         />

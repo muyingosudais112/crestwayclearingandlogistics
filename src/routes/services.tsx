@@ -13,20 +13,25 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
   head: () => ({
     meta: [
-      { title: "Services | Crestway Clearing & Logistics" },
-      { name: "description", content: "Customs clearing, freight forwarding, warehousing and supply chain solutions — air, sea and land freight across Uganda and worldwide." },
-      { property: "og:title", content: "Logistics Services — Crestway" },
-      { property: "og:description", content: "End-to-end logistics services for importers and exporters in Uganda." },
+      { name: "twitter:title", content: "Services | Crestline Customs Agency" },
+      { name: "twitter:description", content: "Crestline Customs Agency: Customs clearing, freight forwarding, warehousing and supply chain solutions — air, sea and land freight across Uganda and worldwide." },
+      { property: "og:url", content: "https://crestwayclearingandlogistics.lovable.app/services" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
+      { title: "Services | Crestline Customs Agency" },
+      { name: "description", content: "Crestline Customs Agency: Customs clearing, freight forwarding, warehousing and supply chain solutions — air, sea and land freight across Uganda and worldwide." },
+      { property: "og:title", content: "Logistics Services — Crestline Customs Agency" },
+      { property: "og:description", content: "Crestline Customs Agency: Customs clearing, freight forwarding, warehousing and supply chain solutions — air, sea and land freight across Uganda and worldwide." },
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: "https://crestwayclearingandlogistics.lovable.app/services" }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Logistics Services — Crestway Clearing & Logistics",
-          url: "https://crestlineclearinglogistics.lovable.app/services",
+          name: "Logistics Services — Crestline Customs Agency",
+          url: "https://crestwayclearingandlogistics.lovable.app/services",
           about: [
             "Customs Clearing","Freight Forwarding","Import & Export Documentation",
             "Cargo Handling","Air Freight","Sea Freight","Land Transportation",
@@ -34,7 +39,7 @@ export const Route = createFileRoute("/services")({
           ],
           provider: {
             "@type": "LocalBusiness",
-            name: "Crestway Clearing & Logistics (U) Ltd",
+            name: "Crestline Customs Agency",
             telephone: "+256778370959",
             address: { "@type": "PostalAddress", addressLocality: "Kampala", addressCountry: "UG" },
           },

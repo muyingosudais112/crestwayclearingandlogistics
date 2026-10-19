@@ -9,7 +9,6 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
-import craneFavicon from "../assets/crane-logo.png";
 
 function NotFoundComponent() {
   return (
@@ -73,23 +72,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Crestway Clearing & Logistics | Customs & Freight Uganda" },
-      { name: "description", content: "Trusted customs clearing, freight forwarding & logistics in Kampala, Uganda. Air, sea & land freight, warehousing and supply chain solutions." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Crestway Clearing & Logistics | Customs & Freight Uganda" },
-      { property: "og:description", content: "Trusted customs clearing, freight forwarding & logistics in Kampala, Uganda. Air, sea & land freight, warehousing and supply chain solutions." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Crestway Clearing & Logistics | Customs & Freight Uganda" },
-      { name: "twitter:description", content: "Trusted customs clearing, freight forwarding & logistics in Kampala, Uganda. Air, sea & land freight, warehousing and supply chain solutions." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ec8502c4-6fe8-4a55-9b4e-43379f6c0993" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ec8502c4-6fe8-4a55-9b4e-43379f6c0993" },
+      { property: "og:site_name", content: "Crestline Customs Agency" },
       { name: "google-site-verification", content: "m_-nQJR09QBNTVZ3i4KNyvP3pOZEAW7E3ga1z3TTWys" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "apple-touch-icon", href: craneFavicon },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,

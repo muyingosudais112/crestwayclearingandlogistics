@@ -52,7 +52,7 @@ export function Hero() {
             className="text-lg md:text-xl text-white/90 max-w-2xl mb-10 leading-relaxed animate-fade-up drop-shadow"
             style={{ animationDelay: "0.2s" }}
           >
-            Crestway Clearing & Logistics simplifies global trade — from customs documentation to
+            Crestline Customs Agency simplifies global trade — from customs documentation to
             doorstep delivery — with the speed, accuracy and accountability modern supply chains demand.
           </p>
 

@@ -16,20 +16,25 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact Us | Crestway Clearing & Logistics" },
-      { name: "description", content: "Contact Crestway Clearing & Logistics in Kampala, Uganda for customs clearing and freight forwarding quotes. We respond within one business day." },
-      { property: "og:title", content: "Contact Crestway Clearing & Logistics" },
-      { property: "og:description", content: "Get in touch for a freight or customs clearing quote." },
+      { name: "twitter:title", content: "Contact Us | Crestline Customs Agency" },
+      { name: "twitter:description", content: "Contact Crestline Customs Agency in Kampala, Uganda for customs clearing and freight forwarding quotes. We respond within one business day." },
+      { property: "og:url", content: "https://crestwayclearingandlogistics.lovable.app/contact" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
+      { title: "Contact Us | Crestline Customs Agency" },
+      { name: "description", content: "Contact Crestline Customs Agency in Kampala, Uganda for customs clearing and freight forwarding quotes. We respond within one business day." },
+      { property: "og:title", content: "Contact Crestline Customs Agency" },
+      { property: "og:description", content: "Contact Crestline Customs Agency in Kampala, Uganda for customs clearing and freight forwarding quotes. We respond within one business day." },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://crestwayclearingandlogistics.lovable.app/contact" }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: "Crestway Clearing & Logistics (U) Ltd",
-          url: "https://crestlineclearinglogistics.lovable.app/contact",
+          name: "Crestline Customs Agency",
+          url: "https://crestwayclearingandlogistics.lovable.app/contact",
           telephone: "+256778370959",
           email: "info@crestwaylogistics.co.ug",
           address: {
@@ -100,7 +105,7 @@ function ContactPage() {
                 <div className="relative aspect-[16/9] bg-secondary">
                   <iframe
                     src={mapEmbedUrl}
-                    title="Crestway Clearing & Logistics location map"
+                    title="Crestline Customs Agency location map"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     allowFullScreen
@@ -111,7 +116,7 @@ function ContactPage() {
                     href={directionsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Open Crestway location in Google Maps"
+                    aria-label="Open Crestline Customs Agency location in Google Maps"
                     className="absolute inset-0"
                   />
                 </div>
@@ -121,7 +126,7 @@ function ContactPage() {
                       <MapPin className="w-5 h-5 text-gold" />
                     </div>
                     <div>
-                      <div className="font-semibold text-navy">Crestway Clearing & Logistics (U) Ltd</div>
+                      <div className="font-semibold text-navy">Crestline Customs Agency</div>
                       <div className="text-sm text-muted-foreground">Kampala, Uganda</div>
                     </div>
                   </div>
