@@ -27,12 +27,17 @@ export const Route = createFileRoute("/track")({
   component: TrackPage,
   head: () => ({
     meta: [
-      { title: "Track Shipment | Crestway Clearing & Logistics" },
-      { name: "description", content: "Track your shipment status in real time with Crestway Clearing & Logistics. Enter your tracking ID to see progress from clearance to delivery." },
-      { property: "og:title", content: "Track Shipment — Crestway Logistics" },
-      { property: "og:description", content: "Real-time shipment tracking across Uganda and beyond." },
+      { name: "twitter:title", content: "Track Shipment | Crestline Customs Agency" },
+      { name: "twitter:description", content: "Track your shipment status in real time with Crestline Customs Agency. Enter your tracking ID to see progress from clearance to delivery." },
+      { property: "og:url", content: "https://crestwayclearingandlogistics.lovable.app/track" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
+      { title: "Track Shipment | Crestline Customs Agency" },
+      { name: "description", content: "Track your shipment status in real time with Crestline Customs Agency. Enter your tracking ID to see progress from clearance to delivery." },
+      { property: "og:title", content: "Track Shipment — Crestline Customs Agency" },
+      { property: "og:description", content: "Track your shipment status in real time with Crestline Customs Agency. Enter your tracking ID to see progress from clearance to delivery." },
     ],
-    links: [{ rel: "canonical", href: "/track" }],
+    links: [{ rel: "canonical", href: "https://crestwayclearingandlogistics.lovable.app/track" }],
   }),
 });
 

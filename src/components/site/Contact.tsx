@@ -73,7 +73,7 @@ export function Contact() {
               <div className="relative aspect-[16/10] bg-secondary">
                 <iframe
                   src={mapEmbedUrl}
-                  title="Crestway Clearing & Logistics location map"
+                  title="Crestline Customs Agency location map"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
@@ -84,7 +84,7 @@ export function Contact() {
                   href={directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Open Crestway location in Google Maps"
+                  aria-label="Open Crestline Customs Agency location in Google Maps"
                   className="absolute inset-0"
                 />
               </div>
@@ -94,7 +94,7 @@ export function Contact() {
                     <MapPin className="w-5 h-5 text-gold" />
                   </div>
                   <div>
-                    <div className="font-semibold text-navy">Crestway Clearing & Logistics (U) Ltd</div>
+                    <div className="font-semibold text-navy">Crestline Customs Agency</div>
                     <div className="text-sm text-muted-foreground">Kampala, Uganda</div>
                   </div>
                 </div>

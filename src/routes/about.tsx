@@ -11,12 +11,17 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About Us | Crestway Clearing & Logistics" },
-      { name: "description", content: "Learn about Crestway Clearing & Logistics — a Kampala-based customs and freight forwarding partner trusted across Uganda and the region." },
-      { property: "og:title", content: "About Crestway Clearing & Logistics" },
-      { property: "og:description", content: "Your trusted partner in customs and logistics across Uganda and beyond." },
+      { name: "twitter:title", content: "About Us | Crestline Customs Agency" },
+      { name: "twitter:description", content: "Learn about Crestline Customs Agency — a Kampala-based customs and freight forwarding partner trusted across Uganda and the region." },
+      { property: "og:url", content: "https://crestwayclearingandlogistics.lovable.app/about" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
+      { title: "About Us | Crestline Customs Agency" },
+      { name: "description", content: "Learn about Crestline Customs Agency — a Kampala-based customs and freight forwarding partner trusted across Uganda and the region." },
+      { property: "og:title", content: "About Crestline Customs Agency" },
+      { property: "og:description", content: "Learn about Crestline Customs Agency — a Kampala-based customs and freight forwarding partner trusted across Uganda and the region." },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://crestwayclearingandlogistics.lovable.app/about" }],
   }),
 });
 
@@ -33,7 +38,7 @@ function AboutPage() {
       <Navbar />
       <main>
         <PageHeader
-          eyebrow="About Crestway"
+          eyebrow="About Crestline Customs Agency"
           title="Your trusted partner in customs & logistics."
           description="From documentation to doorstep delivery, we handle the complexity so you can focus on growing your business."
         />
@@ -43,7 +48,7 @@ function AboutPage() {
             <div className="relative">
               <img
                 src={warehouse}
-                alt="Crestway warehouse operations in Kampala, Uganda"
+                alt="Crestline Customs Agency warehouse operations in Kampala, Uganda"
                 loading="lazy"
                 width={1280}
                 height={800}
@@ -62,7 +67,7 @@ function AboutPage() {
                 Built on accuracy, speed and accountability.
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Crestway Clearing & Logistics (U) Ltd helps businesses navigate customs procedures
+                Crestline Customs Agency helps businesses navigate customs procedures
                 and transport cargo smoothly across Uganda and internationally. We serve SMEs,
                 corporates and international trade partners with the speed and precision modern
                 supply chains demand.
